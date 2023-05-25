@@ -1,0 +1,185 @@
+html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+body {
+  margin: 0px;
+  font-family: "Roboto Condensed", sans-serif;
+  letter-spacing: 1px;
+  line-height: 140%;
+}
+a{ color: black; text-decoration: none;}
+
+.topBar {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 50px;
+
+  font-size: 30px;
+  border-bottom: 2px solid black;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.topBar > *,
+.topBar > * > * {
+  float: left;
+  padding-right: 20px;
+  font-weight: 400;
+}
+
+.logo {
+  margin-left: 70px;
+  font-weight: 1000;
+  font-size: 50px;
+}
+
+.wrapper1 {
+  margin-left: 100px;
+}
+
+.reminder {
+  height: 80px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+
+  line-height: normal;
+  font-size: 50px;
+  font-weight: 800;
+  color: white;
+  background-color: #005a9e;
+
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-column-gap: 30px;
+  grid-row-gap: 10px;
+}
+.photoContainer {
+  display: inline-flex;
+  height: 500px;
+}
+
+
+.foto2 {
+  position: relative;
+  left: -100px;
+  bottom: -150px;
+}
+
+.textCell, .textCell2{
+  padding: 10px;
+}
+
+li{
+  list-style: square;
+}
+
+.swiper {
+  width: 100%;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background-color: #cccc;
+  height: calc((100% - 30px) / 2) !important;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width:1382px) {
+.textCell{padding: 0px; margin-left: -100px;}
+.foto{height: 250px;}
+.foto2{height: 250px;}
+}
+@media only screen and (max-width:1130px){
+  .foto2{left: -250px; bottom: -150px;}
+  .textCell{margin-left: -250px;}
+}
+@media only screen and (max-width:955px){
+  .container{display: block;}
+  .textCell{margin: 20px;}
+  .foto{height: 400px;}
+  .foto2{height: 400px;}
+  .photoContainer{height: 550px;}
+  .foto3{width: 100%; height: auto;}
+}
+
+.topBarMenu{
+  height: 70px;
+  width: 100px;
+
+  display: none;
+}
+.topBarMenuElement{
+  width: 100%;
+
+  text-decoration: underline;
+
+  padding: 10px;
+  font-size: 30px;
+  border-top: 0px ;
+
+}
+.topBarMenuWrapper{
+  height: 150px;
+  width: 230px;
+
+  left: -90px;
+  bottom: -14px;
+
+  text-align: center;
+  background-color:white;
+  border: 2px solid black;
+  border-top: 0px;
+
+  display:none;
+  position:relative;
+}
+@media only screen and (max-width:775px)
+{
+  .foto{height: 300px;}
+  .foto2{height: 300px;}
+  .topBarLink{display: none;}
+  .topBarMenu{display: block;}
+}
+@media only screen and (max-width:660px)
+{
+  .foto{height: 250px;}
+  .foto2{height: 250px;}
+  .wrapper1{margin-left: 15px;}
+}
+
+@media only screen and (max-width:515px)
+{
+  .foto{height: 230px;}
+  .foto2{height: 230px;}
+  .wrapper1{margin-left: 15px;}
+}
+@media only screen and (max-width:450px)
+{
+  .foto{height: 200px;}
+  .foto2{height: 200px;}
+}
+@media only screen and (max-width:370px)
+{
+  .foto{height: 150px;}
+  .foto2{height: 150px; left: -125px; top: 80px;}
+  .photoContainer{height: 230px;}
+}
+
+
+

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Nazwa strony</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
+        rel="stylesheet">
+        
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+    <div class="topBar">
+        <div class="logo">Logo</div>
+
+        <div>
+            <div class="topBarLink"><a href="*">Strona startowa</a></div>
+            <div class="topBarLink"><a href="*">Strona główna</a></div>
+            <div class="topBarLink"><a href="*">Kontakt</a></div>
+
+            <div class="topBarMenu" id="topBarMenu">
+                <img src="list.png" height="70px" onclick="menuDisplay()" alt="lista">
+                <div class="topBarMenuWrapper" id="menu">
+
+                    <div class="topBarMenuElement"><a href="*">Strona startowa</a></div>
+                    <div class="topBarMenuElement"><a href="*">Strona główna</a></div>
+                    <div class="topBarMenuElement"><a href="*">Kontakt</a></div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper1">
+        🏠 Start > Strona główna
+        <div class="reminder">Strona główna</div>
+    </div>
+
+    <div class="container">
+        <div class="photoContainer">
+            <img src="foto1.jpg" height="300px" class="foto" alt="zdjęcie 1">
+            <img src="foto2.jpg" height="300px" class="foto2" alt="zdjęcie 2">
+        </div>
+
+        <div class="textCell">
+            <div>
+                <h3>Quisque ac ipsum ut sapien vestibulum suscipit. Curabitur egestas mollis orci, ut interdum magna
+                    blandit
+                    et. Pellentesque id rutrum augue, at iaculis magna. Etiam vel auctor libero, vitae consectetur ex.
+                    Pellentesque dictum laoreet ornare.</h3>
+                <p>Aliquam quis lorem rhoncus, hendrerit diam sed, mattis lectus. Mauris mollis blandit dui nec feugiat.
+                    Vivamus vestibulum venenatis sem, eu pulvinar tellus vestibulum at. Donec venenatis egestas sodales.
+                    Praesent vitae accumsan orci, id congue nulla. Vivamus rutrum dui at ex facilisis gravida.
+                    Vestibulum id
+                    convallis felis, non volutpat nibh. Integer eget felis scelerisque, pellentesque ligula eu,
+                    venenatis
+                    ipsum. Donec at erat urna. Morbi porta, quam in tincidunt mollis, lacus ante ultrices lacus, sit
+                    amet
+                    lobortis sem sem a enim.</p>
+                <p>Integer et tristique diam. Donec porta, massa quis rutrum iaculis, purus tortor cursus arcu,
+                    fringilla
+                    laoreet nisl nunc eget ipsum. Aliquam viverra orci sit amet tortor sagittis elementum. Ut congue ex
+                    nec
+                    ex aliquam elementum.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="textCell2">
+            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce diam arcu, tincidunt et blandit ut, tempus nec tellus. Vestibulum ante ipsum primis in faucibus orci luctus</h3>
+            
+            <ul>
+                <li>Sed feugiat sit amet lacus egestas commodo.</li>
+                <li>Ut imperdiet molestie quam, sed egestas elit tempus sed.</li>
+                <li>Quisque non elementum elit, sed vulputate turpis. </li>
+                <li>Cras auctor ex in lectus interdum efficitur. </li>
+                
+            </ul>
+        </div>
+
+            <img src="foto3.jpg" class="foto3" height="400px" alt="zdjęcie 3">
+        
+    </div>
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">Slide 1</div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+              <div class="swiper-slide">Slide 4</div>
+              <div class="swiper-slide">Slide 5</div>
+              <div class="swiper-slide">Slide 6</div>
+              <div class="swiper-slide">Slide 7</div>
+              <div class="swiper-slide">Slide 8</div>
+              <div class="swiper-slide">Slide 9</div>
+              <div class="swiper-slide">Slide 7</div>
+              <div class="swiper-slide">Slide 8</div>
+              <div class="swiper-slide">Slide 9</div>
+              
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        grid: {
+          rows: 2,
+        },
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+</body>
+
+</html>
